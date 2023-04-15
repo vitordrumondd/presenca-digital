@@ -1,0 +1,51 @@
+nav {
+    display: flex;
+    border-bottom: 1px solid var(--color-c1);
+    justify-content: space-between;
+    padding: 20px 32px;
+    font-family: IBM Plex Sans;
+}
+header {
+    position: sticky;
+    top: 0;
+    background: white;
+    z-index: 1;
+}
+header ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+header a {
+    color: var(--color-c9);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.25rem;
+    padding: 10px 15px;
+}
+header a:hover {
+   color: var(--color-c7);
+}
+
+@media (max-width: 768px) {
+    header {
+        position: initial;
+    }
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding-bottom: 32px;
+    }
+    nav ul {
+        flex-wrap: wrap;
+        display: flex;
+    }
+    nav ul li {
+        margin: 10px;
+    }
+    header a {
+        background: var(--color-c1);
+        border-radius: 4px;
+    }
+}
